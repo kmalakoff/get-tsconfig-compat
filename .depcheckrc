@@ -1,2 +1,2 @@
-ignores: ["depcheck", "typescript", "@babel/*", "babel-*", "eslint-*", "rollup-*"]
+ignores: ["depcheck", "typescript"]
 ignoreDirs: [".tmp"]

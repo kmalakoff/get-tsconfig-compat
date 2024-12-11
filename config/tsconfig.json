@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "types": ["node"],
+    "target": "ES5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+  }
+}

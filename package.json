@@ -12,33 +12,34 @@
     "url": "git@github.com:kmalakoff/get-tsconfig-compat.git"
   },
   "license": "MIT",
+  "type": "commonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
+    "format": "",
     "build": "",
-    "build:get-tsconfig": "rollup -c config/rollup.gts.config.mjs",
+    "build:tsconfig": "rollup -c config/rollup.gts.config.mjs && echo \"export * from 'get-tsconfig';\" > dist/index.d.ts",
     "prepublishOnly": "depcheck",
     "test": "mocha-compat test/**/*.test.*",
     "test:engines": "nvu engines npm test"
   },
   "dependencies": {
-    "core-js": "^3.39.0"
+    "core-js": "^3.39.0",
+    "get-tsconfig": "*"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.26.0",
-    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
-    "@typescript-eslint/parser": "^8.18.0",
+    "@types/node": "^22.10.1",
     "depcheck": "^1.4.7",
-    "get-tsconfig": "^4.8.1",
     "mocha-compat": "^3.6.2",
     "rollup": "^4.28.1",
     "rollup-plugin-node-externals": "^7.1.3",
     "slash": "^1.0.0",
+    "ts-swc-rollup-plugin": "^1.1.1",
     "typescript": "^5.7.2"
   },
   "engines": {

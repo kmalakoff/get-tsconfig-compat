@@ -1,16 +1,17 @@
+import path from 'path';
+import url from 'url';
 import resolve from '@rollup/plugin-node-resolve';
 import externals from 'rollup-plugin-node-externals';
 import commonjs from '@rollup/plugin-commonjs';
-import { getBabelOutputPlugin } from '@rollup/plugin-babel';
-import Module from "module";
+import { swc } from 'ts-swc-rollup-plugin';
+// import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 
-const require = Module.createRequire(import.meta.url);
-var input = require.resolve('get-tsconfig');
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 
 export default {
-  input,
+  input: path.resolve(__dirname, '..', 'src', 'index.ts'),
   output: {
-    file: 'lib/get-tsconfig.js',
+    file: 'dist/index.js',
     format: 'cjs',
     exports: 'named',
   },
@@ -18,8 +19,9 @@ export default {
     externals({ deps: false, builtinsPrefix: 'strip' }),
     resolve(),
     commonjs(),
-    getBabelOutputPlugin({
-          presets: [['@babel/preset-env', { modules: 'cjs' }]],
-    }),
+    swc({ cwd: __dirname })
+    // getBabelOutputPlugin({
+    //   presets: [['@babel/preset-env', { modules: 'cjs' }]],
+    // }),
   ],
 };
