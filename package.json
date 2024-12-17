@@ -1,6 +1,6 @@
 {
   "name": "get-tsconfig-compat",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Portable version of get-tsconfig for earlier versions of node.js",
   "keywords": [
     "tsconfig.json",
