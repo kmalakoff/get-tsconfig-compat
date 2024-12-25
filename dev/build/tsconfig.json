@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es2015"],
-    "types": ["node"],
+    "lib": ["ES5"],
     "target": "ES5",
     "module": "esnext",
     "moduleResolution": "node",
@@ -9,6 +8,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
-    "allowJs": true,
-  }
+    "allowJs": true
+  },
+  "include": ["src", "node_modules/get-tsconfig"]
 }
