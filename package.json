@@ -12,38 +12,48 @@
     "url": "git@github.com:kmalakoff/get-tsconfig-compat.git"
   },
   "license": "MIT",
-  "type": "commonjs",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.esm.mjs",
+      "require": "./dist/cjs/index.cjs.js",
+      "types": "./dist/types/index.esm.d.ts"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/cjs/index.cjs.js",
+  "module": "dist/dist/esm/index.esm.mjs",
+  "types": "dist/types/index.esm.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "assets"
   ],
   "scripts": {
-    "build": "",
-    "build:tsconfig": "rollup -c config/rollup.gts.config.mjs && echo \"export * from 'get-tsconfig';\" > dist/index.d.ts",
+    "build": "tsds build",
     "format": "",
     "prepublishOnly": "depcheck",
-    "test": "mocha-compat test/**/*.test.*",
-    "test:engines": "nvu engines npm test",
+    "test": "tsds test:node",
+    "test:engines": "nvu engines tsds test:node",
     "version": ""
   },
   "dependencies": {
-    "core-js": "^3.39.0"
+    "core-js": "^3.39.0",
+    "get-tsconfig": "*",
+    "is-absolute": "^1.0.0",
+    "path-posix": "^1.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^22.10.2",
     "depcheck": "^1.4.7",
-    "get-tsconfig": "*",
-    "mocha-compat": "^3.6.2",
-    "rollup": "^4.28.1",
-    "rollup-plugin-node-externals": "^8.0.0",
     "slash": "^1.0.0",
-    "ts-swc-rollup-plugin": "^1.2.1",
+    "ts-dev-stack": "^1.5.2",
     "typescript": "^5.7.2"
   },
   "engines": {
     "node": ">=0.8"
+  },
+  "tsds": {
+    "source": "src/index.esm.ts"
   }
 }

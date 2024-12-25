@@ -1,2 +1,2 @@
-ignores: ["depcheck", "typescript"]
+ignores: ["get-tsconfig-compat", "ts-dev-stack", "depcheck", "typescript"]
 ignoreDirs: [".tmp"]
