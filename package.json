@@ -1,6 +1,6 @@
 {
   "name": "get-tsconfig-compat",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Portable version of get-tsconfig for earlier versions of node.js",
   "keywords": [
     "tsconfig.json",
@@ -25,7 +25,7 @@
   "module": "dist/dist/esm/index.esm.mjs",
   "types": "dist/types/index.esm.d.ts",
   "files": [
-    "lib",
+    "dist",
     "assets"
   ],
   "scripts": {
@@ -47,7 +47,7 @@
     "@types/node": "^22.10.2",
     "depcheck": "^1.4.7",
     "slash": "^1.0.0",
-    "ts-dev-stack": "^1.5.2",
+    "ts-dev-stack": "^1.6.13",
     "typescript": "^5.7.2"
   },
   "engines": {

@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.esm.ts"],"sourcesContent":["export * from 'get-tsconfig';\n"],"names":[],"mappings":"AAAA,cAAc,eAAe"}
+{"version":3,"sources":["/Users/kevin/Dev/Community/@compat/get-tsconfig-compat/src/index.esm.ts"],"sourcesContent":["export * from 'get-tsconfig';\n"],"names":[],"mappings":"AAAA,cAAc,eAAe"}

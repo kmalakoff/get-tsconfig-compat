@@ -5,7 +5,7 @@ import swc from 'ts-swc-rollup-plugin';
 
 export default {
   output: {
-    format: 'umd',
+    format: 'cjs',
     name: 'getTSCompat',
   },
   plugins: [resolve(), commonjs(), externals({ deps: false, devDeps: false, builtinsPrefix: 'strip' }), swc()],

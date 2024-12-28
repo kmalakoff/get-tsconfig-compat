@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.cjs.ts"],"sourcesContent":["import './polyfills.js'\n\n// @ts-ignore\nexport * from '../../assets/get-tsconfig.cjs';\n"],"names":[],"mappings":";;;;QAAO;qBAGO"}
+{"version":3,"sources":["/Users/kevin/Dev/Community/@compat/get-tsconfig-compat/src/index.cjs.ts"],"sourcesContent":["import './polyfills.js'\n\n// @ts-ignore\nexport * from '../../assets/get-tsconfig.cjs';\n"],"names":[],"mappings":";;;;QAAO;qBAGO"}
