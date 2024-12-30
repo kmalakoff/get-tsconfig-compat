@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 require("core-js/actual/array/fill");
+require("core-js/actual/array/includes");
 require("core-js/actual/object/entries");
 require("core-js/actual/set");
 require("core-js/actual/string/ends-with");
