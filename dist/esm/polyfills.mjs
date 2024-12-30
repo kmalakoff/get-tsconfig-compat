@@ -1,4 +1,5 @@
 import 'core-js/actual/array/fill';
+import 'core-js/actual/array/includes';
 import 'core-js/actual/object/entries';
 import 'core-js/actual/set';
 import 'core-js/actual/string/ends-with';
