@@ -1,0 +1,3 @@
+[submodule "dev/build/get-tsconfig"]
+	path = dev/build/get-tsconfig
+	url = https://github.com/privatenumber/get-tsconfig.git

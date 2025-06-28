@@ -1,0 +1,1 @@
+ignores: ["build", "rimraf", "is-fs-case-sensitive", "jsonc-parser"]
