@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/kevin/Dev/@compat/get-tsconfig-compat/src/index.cjs.ts"],"sourcesContent":["import './polyfills.js'\n\n// @ts-ignore\nexport * from '../../assets/get-tsconfig.cjs';\n"],"names":[],"mappings":"AAAA,OAAO,iBAAgB;AAEvB,aAAa;AACb,cAAc,gCAAgC"}

@@ -15,43 +15,40 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/esm/index.esm.mjs",
-      "require": "./dist/cjs/index.cjs.js",
-      "types": "./dist/types/index.esm.d.ts"
+      "import": "./dist/esm/index-esm.js",
+      "require": "./dist/cjs/index-cjs.js"
     },
-    "./*": "./*"
+    "./package.json": "./package.json"
   },
-  "main": "dist/cjs/index.cjs.js",
-  "module": "dist/dist/esm/index.esm.mjs",
-  "types": "dist/types/index.esm.d.ts",
+  "main": "dist/cjs/index-cjs.js",
+  "types": "dist/cjs/index-cjs.d.cts",
   "files": [
     "dist",
     "assets"
   ],
   "scripts": {
     "build": "tsds build",
-    "format": "",
-    "prepublishOnly": "depcheck",
-    "test": "tsds test:node",
-    "test:engines": "nvu engines tsds test:node",
-    "version": ""
+    "format": "biome check --write --unsafe",
+    "test": "mocha --no-timeouts test/**/*.test.*",
+    "test:engines": "nvu engines tsds test:node --no-timeouts",
+    "version": "tsds version"
   },
   "dependencies": {
-    "core-js": "^3.39.0",
+    "core-js": "^3.43.0",
     "get-tsconfig": "*",
     "is-absolute": "^1.0.0",
     "path-posix": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.10.2",
+    "@types/node": "^24.0.7",
     "slash": "^1.0.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=0.8"
   },
   "tsds": {
-    "source": "src/index.esm.ts"
+    "source": "src/index-esm.ts"
   }
 }

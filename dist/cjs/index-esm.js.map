@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/kevin/Dev/@compat/get-tsconfig-compat/src/index-esm.ts"],"sourcesContent":["export * from 'get-tsconfig';\n"],"names":[],"mappings":";;;;qBAAc"}

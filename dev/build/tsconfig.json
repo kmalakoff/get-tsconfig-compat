@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
+    "outDir": "dist",
     "lib": ["ES5"],
     "target": "ES5",
     "module": "esnext",
@@ -7,8 +9,11 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
     "downlevelIteration": true,
     "allowJs": true
   },
-  "include": ["src", "node_modules/get-tsconfig"]
+  "include": ["node_modules"]
 }
