@@ -1,3 +1,3 @@
-var getTS = require('./dist/cjs/index.cjs')
+var getTS = require('./dist/cjs/index.cjs');
 
-console.log(getTS)
+console.log(getTS);
