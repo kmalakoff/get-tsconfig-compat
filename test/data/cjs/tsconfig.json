@@ -1,10 +1,10 @@
 {
-  "compilerOptions": {
-    "target": "ES3",
-    "jsx": "react-native",
-    "module": "CommonJS",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
-  }
+	"compilerOptions": {
+		"target": "ES3",
+		"jsx": "react-native",
+		"module": "CommonJS",
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	}
 }

@@ -34,16 +34,15 @@
     "version": "tsds version"
   },
   "dependencies": {
-    "core-js": "^3.43.0",
+    "core-js": "*",
     "get-tsconfig": "*",
-    "is-absolute": "^1.0.0",
-    "path-posix": "^1.0.0"
+    "is-absolute": "*",
+    "path-posix": "*"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.0.7",
-    "slash": "^1.0.0",
-    "typescript": "^5.8.3"
+    "slash": "^1.0.0"
   },
   "engines": {
     "node": ">=0.8"

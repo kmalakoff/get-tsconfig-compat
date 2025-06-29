@@ -1,2 +1,2 @@
-ignores: ["get-tsconfig-compat", "typescript"]
+ignores: ["get-tsconfig-compat"]
 ignoreDirs: [".tmp"]

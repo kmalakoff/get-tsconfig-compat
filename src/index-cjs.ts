@@ -21,4 +21,9 @@ export const createPathsMatcher = getTS.createPathsMatcher as typeof t.createPat
 export const getTsconfig = getTS.getTsconfig as typeof t.getTsconfig;
 export const parseTsconfig = getTS.parseTsconfig as typeof t.parseTsconfig;
 
-export default { createFilesMatcher, createPathsMatcher, getTsconfig, parseTsconfig };
+export default {
+  createFilesMatcher,
+  createPathsMatcher,
+  getTsconfig,
+  parseTsconfig,
+};

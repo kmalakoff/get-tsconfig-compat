@@ -22,7 +22,7 @@ let contents = fs.readFileSync(dest, 'utf8');
 contents = contents.split('// Annotate the CommonJS export names for ESM import in node');
 contents = contents.slice(0, -1)[0];
 contents += `
-// Annotate the CommonJS export names for ESM import in node:
+// Annotate the CommonJS export names for ESM import in 
 0 && (module.exports = {
   createFilesMatcher: createFilesMatcher,
   createPathsMatcher: createFilesMatcher,
