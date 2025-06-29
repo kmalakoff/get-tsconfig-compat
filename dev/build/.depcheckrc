@@ -1,1 +1,1 @@
-ignores: ["build", "rimraf", "is-fs-case-sensitive", "jsonc-parser"]
+ignores: ["build", "rimraf", "is-fs-case-sensitive", "jsonc-parser", "get-tsconfig"]
