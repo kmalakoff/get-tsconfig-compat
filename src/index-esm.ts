@@ -1,1 +1,1 @@
-export * from 'get-tsconfig';
+export * from './index-cjs.ts';

@@ -7,3 +7,8 @@ lerna-debug.log
 data/
 *.heapsnapshot
 *.0x
+.agents/
+.archive/
+.tmp/
+.worktrees/
+.cache/

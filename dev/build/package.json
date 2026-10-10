@@ -3,22 +3,22 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "rimraf node_modules/jsonc-parser/lib/umd",
-    "build": "node scripts/assets.mjs"
+    "build": "node scripts/assets.mjs",
+    "postinstall": "rimraf node_modules/jsonc-parser/lib/umd"
   },
   "dependencies": {
-    "get-tsconfig": "^4.10.1",
-    "is-fs-case-sensitive": "^1.0.0",
+    "get-tsconfig": "^4.12.0",
+    "is-fs-case-sensitive": "^2.0.0",
     "jsonc-parser": "^3.3.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "esbuild": "^0.25.5",
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "esbuild": "^0.25.11",
     "esbuild-plugin-es5": "^2.1.1",
     "rimraf": "^6.0.1",
-    "rollup": "^4.44.1",
-    "rollup-plugin-node-externals": "^8.0.1",
-    "ts-swc-rollup-plugin": "^2.3.1"
+    "rollup": "^4.52.5",
+    "rollup-plugin-node-externals": "^8.1.1",
+    "ts-swc-rollup-plugin": "^2.3.13"
   }
 }
