@@ -1,2 +1,2 @@
-ignores: ["get-tsconfig-compat"]
+ignores: ["get-tsconfig-compat", "node-version-use", "ts-dev-stack"]
 ignoreDirs: [".tmp"]

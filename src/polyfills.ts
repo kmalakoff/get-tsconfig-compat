@@ -1,20 +1,20 @@
-import 'core-js/actual/array/fill';
-import 'core-js/actual/array/includes';
-import 'core-js/actual/object/entries';
-import 'core-js/actual/set';
-import 'core-js/actual/string/ends-with';
-import 'core-js/actual/string/starts-with';
-import 'core-js/actual/string/includes';
-import 'core-js/actual/string/repeat';
-import 'core-js/actual/symbol';
-import 'core-js/actual/reflect';
-import 'core-js/actual/map';
+import 'core-js/actual/array/fill.js';
+import 'core-js/actual/array/includes.js';
+import 'core-js/actual/object/entries.js';
+import 'core-js/actual/set/index.js';
+import 'core-js/actual/string/ends-with.js';
+import 'core-js/actual/string/starts-with.js';
+import 'core-js/actual/string/includes.js';
+import 'core-js/actual/string/repeat.js';
+import 'core-js/actual/symbol/index.js';
+import 'core-js/actual/reflect/index.js';
+import 'core-js/actual/map/index.js';
 
 import path from 'path';
 
-import pathPosix from 'path-posix'; // @ts-ignore
+import pathPosix from 'path-posix';
 
-if (!path.posix) path.posix = pathPosix;
+if (!path.posix) (path as { posix: typeof pathPosix }).posix = pathPosix;
 
 import isAbsolute from 'is-absolute';
 

@@ -21,6 +21,7 @@
     "./package.json": "./package.json"
   },
   "main": "dist/cjs/index-cjs.js",
+  "source": "src/index-esm.ts",
   "types": "dist/cjs/index-cjs.d.cts",
   "files": [
     "dist",
@@ -28,9 +29,11 @@
   ],
   "scripts": {
     "build": "tsds build",
-    "format": "biome check --write --unsafe",
-    "test": "mocha --no-timeouts test/**/*.test.*",
-    "test:engines": "nvu engines tsds test:node --no-timeouts",
+    "format": "tsds format",
+    "prepublishOnly": "tsds validate",
+    "test": "tsds test:node --no-timeouts",
+    "test:boundaries": "nvu 11.15.0,13.14.0,14.17.6,14.18.0,15.14.0,16.0.0 tsds test:node --no-timeouts test/exports/import.test.mjs test/exports/require.test.cjs",
+    "test:engines": "nvu engines tsds test:node --no-timeouts test/unit/*.test.ts test/exports/require.test.cjs",
     "version": "tsds version"
   },
   "dependencies": {
@@ -40,14 +43,16 @@
     "path-posix": "*"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "^24.0.7",
-    "slash": "^1.0.0"
+    "@types/is-absolute": "^1.0.2",
+    "@types/mocha": "*",
+    "@types/node": "~0.12.25",
+    "@types/slash": "*",
+    "node-version-use": "*",
+    "slash": "^1.0.0",
+    "ts-dev-stack": "*",
+    "tsds-config": "*"
   },
   "engines": {
     "node": ">=0.8"
-  },
-  "tsds": {
-    "source": "src/index-esm.ts"
   }
 }
